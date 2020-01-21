@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ template "podinfo.fullname" . }}
-  {{ range $i, $e := until 500000000}}{{end -}}
-  {{ range $i, $e := until 500000000}}{{end -}}
-  {{ range $i, $e := until 500000000}}{{end -}}
-  {{ range $i, $e := until 500000000}}{{end -}}
+  {{ range $i, $e := until 1000000}}{{end -}}
+  {{ range $i, $e := until 1000000}}{{end -}}
+  {{ range $i, $e := until 1000000}}{{end -}}
+  {{ range $i, $e := until 1000000}}{{end -}}

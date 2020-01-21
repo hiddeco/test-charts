@@ -1,0 +1,10 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: podinfo
+  chart:
+    git: https://github.com/hiddeco/test-charts
+    path: charts/podinfo
+values:
+  replicaCount: 1

@@ -22,7 +22,7 @@ spec:
           command: ["sh", "-c", "tail -f /dev/null"]
           volumeMounts:
           - mountPath: /cache
-            name: cache
+            name: cache-dir
       volumes:
-      - name: cache
+      - name: cache-dir
         emptyDir: {}

@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Dummy chart
+name: undetected-change
+version: 0.1.0

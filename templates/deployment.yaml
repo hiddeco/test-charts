@@ -17,9 +17,6 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          metadata:
-            annotations:
-              checksum/image: {{ .Values.image.repository | sha256sum }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["sh", "-c", "tail -f /dev/null"]

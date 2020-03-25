@@ -20,5 +20,9 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["sh", "-c", "tail -f /dev/null"]
-          volumeMounts: []
-      volumes: []
+          volumeMounts:
+          - mountPath: /cache
+            name: cache
+      volumes:
+      - name: cache
+        emptyDir: {}

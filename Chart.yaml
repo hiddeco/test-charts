@@ -1,0 +1,4 @@
+apiVersion: v1
+description: Dummy dependent chart
+name: dependencies
+version: 0.1.0

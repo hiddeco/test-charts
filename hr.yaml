@@ -1,0 +1,11 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: dependencies
+  namespace: default
+spec:
+  chart:
+    git: https://github.com/hiddeco/test-charts
+    ref: dependencies
+    path: ./

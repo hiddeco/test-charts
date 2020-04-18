@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "child.fullname" . }}
+  name: child-{{ include "child.fullname" . }}
   labels:
 {{ include "child.labels" . | indent 4 }}
 spec:

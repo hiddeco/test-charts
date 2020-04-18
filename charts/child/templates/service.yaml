@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "child.fullname" . }}
+  name: child-{{ include "child.fullname" . }}
   labels:
 {{ include "child.labels" . | indent 4 }}
 spec:
